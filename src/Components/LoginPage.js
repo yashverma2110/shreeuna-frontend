@@ -4,12 +4,14 @@ import {
   Card,
   CardContent,
   CardHeader,
+  IconButton,
   makeStyles,
   TextField,
   Typography,
 } from "@material-ui/core";
 import axios from "axios";
 import { BASE_URL_LOCAL } from "../utils/apiConfig";
+import ArrowBack from "@material-ui/icons/ArrowBack";
 
 const LoginPage = ({ showLogin, showAlert }) => {
   const classes = useStyles();
@@ -42,6 +44,11 @@ const LoginPage = ({ showLogin, showAlert }) => {
         <CardHeader
           title="Login"
           subheader={<Typography>Only for admin</Typography>}
+          action={
+            <IconButton>
+              <ArrowBack color="secondary" />
+            </IconButton>
+          }
           className={classes.title}
         />
         <CardContent>
