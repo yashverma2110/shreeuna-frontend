@@ -203,55 +203,59 @@ const ProductSection = ({ category, _id, showAlert, loading }) => {
 
 export default ProductSection;
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    margin: "15px 10px",
-  },
-  modal: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-  },
-  title: {
-    background: theme.palette.primary.main,
-    color: "white",
-    textAlign: "center",
-    padding: "5px",
-  },
-  titleTxt: {
-    color: "white",
-    background: "rgba(0,0,0,0.5)",
-    padding: "0px 5px",
-    textAlign: "center",
-    borderRadius: "8px",
-  },
-  cardContent: {
-    padding: "5px",
-  },
-  columnHeader: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    fontSize: "0.9em",
-    fontWeight: 600,
-    border: "1px solid white",
-    background: theme.palette.primary.main,
-    height: "100%",
-    color: "white",
-    padding: "5px 0px",
-  },
-  columnContent: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    fontSize: "0.9em",
-    fontWeight: 600,
-    border: "1px solid white",
-    background: theme.palette.secondary.main,
-    height: "100%",
-    color: "black",
-    padding: "5px 0px",
-    textAlign: "center",
-    textTransform: "uppercase",
-  },
-}));
+const useStyles = makeStyles(
+  (theme) => ({
+    root: {
+      margin: "15px 10px",
+    },
+    modal: {
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+    },
+    title: {
+      background: theme.palette.primary.main,
+      color: "white",
+      textAlign: "center",
+      padding: "5px",
+    },
+    titleTxt: {
+      color: "white",
+      background: "rgba(0,0,0,0.5)",
+      padding: "0px 5px",
+      textAlign: "center",
+      borderRadius: "8px",
+    },
+    cardContent: {
+      padding: "5px",
+    },
+    columnHeader: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      textAlign: "center",
+      fontSize: "0.9em",
+      fontWeight: 600,
+      border: "1px solid white",
+      background: theme.palette.primary.main,
+      height: "100%",
+      color: "white",
+      padding: "5px 0px",
+    },
+    columnContent: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      fontSize: "0.9em",
+      fontWeight: 600,
+      border: "1px solid white",
+      background: theme.palette.secondary.main,
+      height: "100%",
+      color: "black",
+      padding: "5px 0px",
+      textAlign: "center",
+      textTransform: "uppercase",
+    },
+  }),
+  { index: 1 }
+);
