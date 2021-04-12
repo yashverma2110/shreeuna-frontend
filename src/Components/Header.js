@@ -36,7 +36,7 @@ const Header = ({ showLoginPage }) => {
       )
       .then(() => {
         localStorage.clear();
-        window.location.refresh();
+        window.location.reload();
       });
   };
 
