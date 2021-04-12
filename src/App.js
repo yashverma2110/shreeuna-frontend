@@ -20,7 +20,7 @@ import { isLoggedIn } from "./utils/common";
 function App() {
   const [isLoginPage, setIsLoginPage] = useState(false);
   const [showAlert, setAlert] = useState();
-  const [data, setData] = useState([]);
+  const [data, setData] = useState();
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -41,20 +41,21 @@ function App() {
         <>
           <Banner />
           {isLoggedIn() && <ActionBar showAlert={setAlert} />}
-          {data.length === 0 && (
+          {data && data.length === 0 && (
             <Typography style={{ textAlign: "center" }}>
               <b>Log In to start adding products</b>
             </Typography>
           )}
-          {data.map((item, index) => (
-            <ProductSection
-              key={index}
-              category={item.name}
-              _id={item._id}
-              showAlert={setAlert}
-              loading={loading}
-            />
-          ))}
+          {data &&
+            data.map((item, index) => (
+              <ProductSection
+                key={index}
+                category={item.name}
+                _id={item._id}
+                showAlert={setAlert}
+                loading={loading}
+              />
+            ))}
         </>
       )}
       <Snackbar

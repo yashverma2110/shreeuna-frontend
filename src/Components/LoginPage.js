@@ -45,7 +45,7 @@ const LoginPage = ({ showLogin, showAlert }) => {
           title="Login"
           subheader={<Typography>Only for admin</Typography>}
           action={
-            <IconButton>
+            <IconButton onClick={() => showLogin(false)}>
               <ArrowBack color="secondary" />
             </IconButton>
           }
