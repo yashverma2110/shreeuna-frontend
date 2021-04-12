@@ -1,1 +1,1 @@
-export const BASE_URL_LOCAL = "https://serene-river-56985.herokuapp.com";
+export const BASE_URL_LOCAL = "https://shreeuna-b.herokuapp.com";
