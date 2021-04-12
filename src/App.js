@@ -1,4 +1,9 @@
-import { IconButton, MuiThemeProvider, Snackbar } from "@material-ui/core";
+import {
+  IconButton,
+  MuiThemeProvider,
+  Snackbar,
+  Typography,
+} from "@material-ui/core";
 import Close from "@material-ui/icons/Close";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
@@ -36,6 +41,11 @@ function App() {
         <>
           <Banner />
           {isLoggedIn() && <ActionBar showAlert={setAlert} />}
+          {data.length === 0 && (
+            <Typography style={{ textAlign: "center" }}>
+              <b>Log In to start adding products</b>
+            </Typography>
+          )}
           {data.map((item, index) => (
             <ProductSection
               key={index}
