@@ -36,7 +36,7 @@ const Header = ({ showLoginPage }) => {
       )
       .then(() => {
         localStorage.clear();
-        window.refresh();
+        window.location.refresh();
       });
   };
 
@@ -80,7 +80,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     flexGrow: 1,
     paddingLeft: "10px",
-    fontSize: "1.4em",
+    fontSize: "1.2em",
   },
   offset: theme.mixins.toolbar,
 }));
