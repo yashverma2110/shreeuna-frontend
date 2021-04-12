@@ -110,7 +110,7 @@ const ProductSection = ({ category, _id, showAlert, loading }) => {
         <Grid container>
           <Grid item xs={6}>
             <Typography className={classes.columnHeader}>
-              Product Name & Packing
+              Product Name
             </Typography>
           </Grid>
           <Grid item xs={2}>
@@ -127,15 +127,15 @@ const ProductSection = ({ category, _id, showAlert, loading }) => {
                     <>
                       {" "}
                       <IconButton onClick={() => handleItemEdit(medicine)}>
-                        <Edit style={{ color: "white" }} />
+                        <Edit style={{ color: "white" }} fontSize="large" />
                       </IconButton>
                       <IconButton onClick={() => setOpenDialog(medicine)}>
-                        <Delete style={{ color: "red" }} />
+                        <Delete style={{ color: "red" }} fontSize="large" />
                       </IconButton>
                     </>
                   ) : (
                     <IconButton onClick={() => handleItemShow(medicine)}>
-                      <Visibility style={{ color: "white" }} />
+                      <Visibility style={{ color: "white" }} fontSize="large" />
                     </IconButton>
                   )}
                 </Box>

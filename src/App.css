@@ -6,11 +6,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
 
 #hoverOnEdit {
   position: absolute;
   top: 0;
+  padding: 5px 0px;
   display: none;
   width: 100%;
   height: 100%;
